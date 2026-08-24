@@ -7,14 +7,14 @@ if (search) {
         const text = search.value.toLowerCase();
 
         categories.forEach(function (category) {
-            if (category.textContent.toLowerCase().includes(text)) {
-                category.style.display = "block";
-            } else {
-                category.style.display = "none";
-            }
+            category.style.display =
+                category.textContent.toLowerCase().includes(text)
+                ? "block"
+                : "none";
         });
     });
 }
+
 
 const governmentSearch = document.getElementById("governmentSearch");
 
@@ -25,11 +25,28 @@ if (governmentSearch) {
         const text = governmentSearch.value.toLowerCase();
 
         services.forEach(function (service) {
-            if (service.textContent.toLowerCase().includes(text)) {
-                service.style.display = "block";
-            } else {
-                service.style.display = "none";
-            }
+            service.style.display =
+                service.textContent.toLowerCase().includes(text)
+                ? "block"
+                : "none";
+        });
+    });
+}
+
+
+const educationSearch = document.getElementById("educationSearch");
+
+if (educationSearch) {
+    const services = document.querySelectorAll(".category");
+
+    educationSearch.addEventListener("input", function () {
+        const text = educationSearch.value.toLowerCase();
+
+        services.forEach(function (service) {
+            service.style.display =
+                service.textContent.toLowerCase().includes(text)
+                ? "block"
+                : "none";
         });
     });
 }
