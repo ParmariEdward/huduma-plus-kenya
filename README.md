@@ -1,76 +1,69 @@
-# huduma-plus-kenya
-A Kenyan digital platform connecting people with everyday solutions, services, opportunities, guidance and useful information.
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huduma Plus Kenya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7f5;
-    color: #17231b;
-}
+<body>
 
-header {
-    background: #006b3c;
-    color: white;
-    padding: 25px 20px;
-    text-align: center;
-}
+<header>
+    <h1>Huduma Plus Kenya 🇰🇪</h1>
+    <p>Your gateway to essential Kenyan services</p>
+</header>
 
-header h1 {
-    margin: 0;
-    font-size: 30px;
-}
+<main class="container">
 
-header p {
-    margin: 8px 0 0;
-}
+    <section class="search-box">
+        <h2>Find a Service</h2>
+        <input 
+            type="text" 
+            placeholder="Search for a Kenyan service..."
+        >
+    </section>
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 25px 20px;
-}
+    <section class="categories">
 
-.search-box {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
+        <div class="category">
+            <h3>🏛️ Government</h3>
+            <p>Access government services and information.</p>
+        </div>
 
-.search-box input {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-}
+        <div class="category">
+            <h3>🎓 Education</h3>
+            <p>Find education resources and opportunities.</p>
+        </div>
 
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 12px;
-}
+        <div class="category">
+            <h3>💼 Jobs</h3>
+            <p>Discover jobs and career opportunities.</p>
+        </div>
 
-.category {
-    background: white;
-    padding: 18px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
+        <div class="category">
+            <h3>🏥 Health</h3>
+            <p>Find important health services and information.</p>
+        </div>
 
-.category h3 {
-    margin: 8px 0;
-}
+        <div class="category">
+            <h3>💰 Finance</h3>
+            <p>Explore financial services and resources.</p>
+        </div>
 
-footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 30px;
-    background: #17231b;
-    color: white;
-}
+        <div class="category">
+            <h3>🚗 Transport</h3>
+            <p>Access transport-related information.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Huduma Plus Kenya</p>
+    <p>Built for Kenya 🇰🇪</p>
+</footer>
+
+</body>
+</html>
